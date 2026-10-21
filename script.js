@@ -11,20 +11,9 @@ const CONFIG = {
 };
 
 document.addEventListener("DOMContentLoaded", () => {
-  initDownloadLinks();
   initVersionDisplay();
   initThemeToggle();
 });
-
-/**
- * Configure all DMG download buttons with the target URL
- */
-function initDownloadLinks() {
-  const downloadButtons = document.querySelectorAll(".js-download-link");
-  downloadButtons.forEach((btn) => {
-    btn.setAttribute("href", CONFIG.downloadUrl);
-  });
-}
 
 /**
  * Populate version placeholders across the page

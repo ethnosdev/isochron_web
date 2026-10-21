@@ -31,8 +31,8 @@ isochron_web/
 
 ## ⚙️ Configuration
 
-### 1. DMG Download Link
-In [`script.js`](script.js), `CONFIG.downloadUrl` is set to the release `.dmg`:
+### 1. DMG Download Link and Version
+In [`index.html`](index.html), the download buttons link directly to the release `.dmg`. In [`script.js`](script.js), `CONFIG.version` dynamically syncs version placeholders across the page:
 
 ```javascript
 const CONFIG = {
@@ -40,8 +40,6 @@ const CONFIG = {
   version: "2.0.0",
 };
 ```
-
-All download buttons on the landing page will automatically link to this URL.
 
 ### 2. Screenshots (Light and Dark Mode)
 The landing page automatically switches between light and dark screenshots to match the active theme. Both WebP and lossless PNG fallbacks are included in `isochron_web/assets/`. If you take updated screenshots in the future, simply place them in `assets/` with matching names (`screenshot-light.png` and `screenshot-dark.png`).
