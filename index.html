@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Isochron Studio — Speech & Text Alignment for macOS</title>
-  <meta name="description" content="Isochron Studio is a modern, 100% offline macOS app that automatically aligns spoken audio recordings to text transcripts across 1,100+ languages.">
-  
+  <meta name="description"
+    content="Isochron Studio is a modern, 100% offline macOS app that automatically aligns spoken audio recordings to text transcripts across 1,100+ languages.">
+
   <!-- Favicon -->
   <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon.png">
   <link rel="icon" type="image/png" sizes="64x64" href="assets/favicon-64.png">
@@ -15,12 +17,14 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://isochron.ethnos.dev/">
   <meta property="og:title" content="Isochron Studio — Speech & Text Alignment for Mac">
-  <meta property="og:description" content="Automatically synchronize spoken audio and transcripts in 1,100+ languages. 100% offline on Apple Silicon Macs.">
+  <meta property="og:description"
+    content="Automatically synchronize spoken audio and transcripts in 1,100+ languages. 100% offline on Apple Silicon Macs.">
   <meta property="og:image" content="https://isochron.ethnos.dev/assets/og-image.png">
 
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
 </head>
+
 <body>
 
   <!-- Minimal Top Navigation Bar -->
@@ -39,12 +43,12 @@
         <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Dark/Light Mode">
           <!-- Sun Icon (shown in dark mode) -->
           <svg class="icon-sun" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
               d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
           </svg>
           <!-- Moon Icon (shown in light mode) -->
           <svg class="icon-moon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
               d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
           </svg>
         </button>
@@ -62,23 +66,28 @@
         </h1>
 
         <p class="hero-subtitle">
-          Isochron pairs spoken recordings with written transcripts across 1,100+ languages. Built for audiobooks, language projects, and scriptures—running completely offline on your Mac.
+          Isochron pairs spoken recordings with written transcripts across 1,100+ languages. Built for audiobooks,
+          language projects, and scriptures—running completely offline on your Mac.
         </p>
 
         <div class="hero-cta-group">
           <div class="hero-buttons">
-            <a href="https://github.com/ethnosdev/isochron/releases/latest/download/Isochron.dmg" class="btn-primary js-download-link">
+            <a href="https://github.com/ethnosdev/isochron/releases/latest/download/Isochron.dmg"
+              class="btn-primary js-download-link">
               <!-- Apple Logo SVG -->
               <svg width="20" height="20" viewBox="0 0 170 170" fill="currentColor">
-                <path d="M150.37 130.25c-2.45 5.66-5.35 10.87-8.71 15.66-4.58 6.53-8.33 11.05-11.22 13.56-4.48 4.12-9.28 6.23-14.42 6.35-3.69 0-8.14-1.05-13.32-3.18-5.19-2.12-9.97-3.17-14.34-3.17-4.58 0-9.49 1.05-14.74 3.17-5.26 2.13-9.5 3.24-12.74 3.35-4.35.13-9.16-1.9-14.42-6.08-3.7-3.08-7.71-7.96-12.04-14.64-5.91-9.08-10.46-19.53-13.65-31.35-3.19-11.81-4.79-22.95-4.79-33.4 0-14.63 3.65-26.68 10.96-36.14 7.31-9.46 16.53-14.33 27.67-14.62 5.03 0 10.59 1.45 16.69 4.35 6.1 2.91 10.05 4.41 11.86 4.5 2.12 0 6.3-1.63 12.53-4.9 6.24-3.26 12.05-4.72 17.44-4.36 13.04.85 23.36 5.86 30.96 15.02-11.4 6.89-17 16.52-16.79 28.9.22 9.68 3.96 17.74 11.22 24.18 7.27 6.44 15.91 10.04 25.92 10.8-2.61 8.28-5.83 16.32-9.67 24.12zM119.22 33.15c0-7.39 2.65-14.3 7.95-20.73 5.3-6.43 11.83-10.74 19.59-12.92.54 2.12.82 4.19.82 6.2 0 7.39-2.73 14.37-8.19 20.93-5.46 6.57-12.18 10.79-20.17 12.67z"/>
+                <path
+                  d="M150.37 130.25c-2.45 5.66-5.35 10.87-8.71 15.66-4.58 6.53-8.33 11.05-11.22 13.56-4.48 4.12-9.28 6.23-14.42 6.35-3.69 0-8.14-1.05-13.32-3.18-5.19-2.12-9.97-3.17-14.34-3.17-4.58 0-9.49 1.05-14.74 3.17-5.26 2.13-9.5 3.24-12.74 3.35-4.35.13-9.16-1.9-14.42-6.08-3.7-3.08-7.71-7.96-12.04-14.64-5.91-9.08-10.46-19.53-13.65-31.35-3.19-11.81-4.79-22.95-4.79-33.4 0-14.63 3.65-26.68 10.96-36.14 7.31-9.46 16.53-14.33 27.67-14.62 5.03 0 10.59 1.45 16.69 4.35 6.1 2.91 10.05 4.41 11.86 4.5 2.12 0 6.3-1.63 12.53-4.9 6.24-3.26 12.05-4.72 17.44-4.36 13.04.85 23.36 5.86 30.96 15.02-11.4 6.89-17 16.52-16.79 28.9.22 9.68 3.96 17.74 11.22 24.18 7.27 6.44 15.91 10.04 25.92 10.8-2.61 8.28-5.83 16.32-9.67 24.12zM119.22 33.15c0-7.39 2.65-14.3 7.95-20.73 5.3-6.43 11.83-10.74 19.59-12.92.54 2.12.82 4.19.82 6.2 0 7.39-2.73 14.37-8.19 20.93-5.46 6.57-12.18 10.79-20.17 12.67z" />
               </svg>
               <span>Download for Mac (.dmg)</span>
             </a>
 
-            <a href="https://github.com/ethnosdev/isochron" target="_blank" rel="noopener noreferrer" class="btn-secondary">
+            <a href="https://github.com/ethnosdev/isochron" target="_blank" rel="noopener noreferrer"
+              class="btn-secondary">
               <!-- GitHub Logo SVG -->
               <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
               </svg>
               <span>View Source on GitHub</span>
             </a>
@@ -93,11 +102,13 @@
         <div class="screenshot-showcase">
           <picture class="screenshot-img screenshot-light">
             <source srcset="assets/screenshot-light.webp" type="image/webp">
-            <img src="assets/screenshot-light.png" alt="Isochron Studio for Mac (Light Mode)" width="1245" height="817" loading="eager">
+            <img src="assets/screenshot-light.png" alt="Isochron Studio for Mac (Light Mode)" width="1245" height="817"
+              loading="eager">
           </picture>
           <picture class="screenshot-img screenshot-dark">
             <source srcset="assets/screenshot-dark.webp" type="image/webp">
-            <img src="assets/screenshot-dark.png" alt="Isochron Studio for Mac (Dark Mode)" width="1245" height="817" loading="eager">
+            <img src="assets/screenshot-dark.png" alt="Isochron Studio for Mac (Dark Mode)" width="1245" height="817"
+              loading="eager">
           </picture>
         </div>
 
@@ -120,7 +131,8 @@
             <div class="step-number">1</div>
             <h3 class="step-heading">Add Audio & Text</h3>
             <p class="step-desc">
-              Drop in your spoken audio recordings (.mp3, .wav, or .m4a) and your transcript text files. Isochron automatically pairs matching files together.
+              Drop in your spoken audio recordings (.mp3, .wav, or .m4a) and your transcript text files. Isochron
+              automatically pairs matching files together.
             </p>
           </div>
 
@@ -128,7 +140,8 @@
             <div class="step-number">2</div>
             <h3 class="step-heading">One-Click Auto-Align</h3>
             <p class="step-desc">
-              Click Auto-Align. The offline neural acoustic model listens to the recording and calculates exact start and end timestamps for every sentence and verse.
+              Click Auto-Align. The offline neural acoustic model listens to the recording and calculates exact start
+              and end timestamps for every sentence and verse.
             </p>
           </div>
 
@@ -136,7 +149,8 @@
             <div class="step-number">3</div>
             <h3 class="step-heading">Review & Export</h3>
             <p class="step-desc">
-              Audition sentences with a single keystroke, nudge boundaries if needed, and export clean, standard timing files for your app, eBook, or audio player.
+              Audition sentences with a single keystroke, nudge boundaries if needed, and export clean, standard timing
+              files for your app, eBook, or audio player.
             </p>
           </div>
         </div>
@@ -158,7 +172,8 @@
             <div class="feature-icon-box">🔒</div>
             <h3 class="feature-title">100% Offline & Private</h3>
             <p class="feature-text">
-              Zero cloud processing. Your recordings and text never leave your computer, keeping your sensitive data private and working completely without an internet connection.
+              Zero cloud processing. Your recordings and text never leave your computer, keeping your sensitive data
+              private and working completely without an internet connection.
             </p>
           </div>
 
@@ -166,7 +181,8 @@
             <div class="feature-icon-box">🌍</div>
             <h3 class="feature-title">1,100+ Languages</h3>
             <p class="feature-text">
-              Powered by Meta's MMS neural acoustic model and universal romanization. Works across diverse languages and scripts without custom pronunciation dictionaries.
+              Powered by Meta's MMS neural acoustic model and universal romanization. Works across diverse languages and
+              scripts without custom pronunciation dictionaries.
             </p>
           </div>
 
@@ -174,7 +190,8 @@
             <div class="feature-icon-box">💻</div>
             <h3 class="feature-title">Free & Open Source</h3>
             <p class="feature-text">
-              Isochron is freely accessible to everyone under an open-source license. Explore the code, contribute, or inspect the engine directly on GitHub.
+              Isochron is freely accessible to everyone under an open-source license. Explore the code, contribute, or
+              inspect the engine directly on GitHub.
             </p>
           </div>
         </div>
@@ -191,25 +208,33 @@
           </p>
 
           <div class="download-box">
-            <a href="https://github.com/ethnosdev/isochron/releases/latest/download/Isochron.dmg" class="btn-primary js-download-link">
+            <a href="https://github.com/ethnosdev/isochron/releases/latest/download/Isochron.dmg"
+              class="btn-primary js-download-link">
               <!-- Apple Logo SVG -->
               <svg width="20" height="20" viewBox="0 0 170 170" fill="currentColor">
-                <path d="M150.37 130.25c-2.45 5.66-5.35 10.87-8.71 15.66-4.58 6.53-8.33 11.05-11.22 13.56-4.48 4.12-9.28 6.23-14.42 6.35-3.69 0-8.14-1.05-13.32-3.18-5.19-2.12-9.97-3.17-14.34-3.17-4.58 0-9.49 1.05-14.74 3.17-5.26 2.13-9.5 3.24-12.74 3.35-4.35.13-9.16-1.9-14.42-6.08-3.7-3.08-7.71-7.96-12.04-14.64-5.91-9.08-10.46-19.53-13.65-31.35-3.19-11.81-4.79-22.95-4.79-33.4 0-14.63 3.65-26.68 10.96-36.14 7.31-9.46 16.53-14.33 27.67-14.62 5.03 0 10.59 1.45 16.69 4.35 6.1 2.91 10.05 4.41 11.86 4.5 2.12 0 6.3-1.63 12.53-4.9 6.24-3.26 12.05-4.72 17.44-4.36 13.04.85 23.36 5.86 30.96 15.02-11.4 6.89-17 16.52-16.79 28.9.22 9.68 3.96 17.74 11.22 24.18 7.27 6.44 15.91 10.04 25.92 10.8-2.61 8.28-5.83 16.32-9.67 24.12zM119.22 33.15c0-7.39 2.65-14.3 7.95-20.73 5.3-6.43 11.83-10.74 19.59-12.92.54 2.12.82 4.19.82 6.2 0 7.39-2.73 14.37-8.19 20.93-5.46 6.57-12.18 10.79-20.17 12.67z"/>
+                <path
+                  d="M150.37 130.25c-2.45 5.66-5.35 10.87-8.71 15.66-4.58 6.53-8.33 11.05-11.22 13.56-4.48 4.12-9.28 6.23-14.42 6.35-3.69 0-8.14-1.05-13.32-3.18-5.19-2.12-9.97-3.17-14.34-3.17-4.58 0-9.49 1.05-14.74 3.17-5.26 2.13-9.5 3.24-12.74 3.35-4.35.13-9.16-1.9-14.42-6.08-3.7-3.08-7.71-7.96-12.04-14.64-5.91-9.08-10.46-19.53-13.65-31.35-3.19-11.81-4.79-22.95-4.79-33.4 0-14.63 3.65-26.68 10.96-36.14 7.31-9.46 16.53-14.33 27.67-14.62 5.03 0 10.59 1.45 16.69 4.35 6.1 2.91 10.05 4.41 11.86 4.5 2.12 0 6.3-1.63 12.53-4.9 6.24-3.26 12.05-4.72 17.44-4.36 13.04.85 23.36 5.86 30.96 15.02-11.4 6.89-17 16.52-16.79 28.9.22 9.68 3.96 17.74 11.22 24.18 7.27 6.44 15.91 10.04 25.92 10.8-2.61 8.28-5.83 16.32-9.67 24.12zM119.22 33.15c0-7.39 2.65-14.3 7.95-20.73 5.3-6.43 11.83-10.74 19.59-12.92.54 2.12.82 4.19.82 6.2 0 7.39-2.73 14.37-8.19 20.93-5.46 6.57-12.18 10.79-20.17 12.67z" />
               </svg>
               <span>Download Isochron Studio (.dmg)</span>
             </a>
 
             <div class="specs-badge-list">
               <span class="spec-item">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
                 macOS 12 (Monterey) or later
               </span>
               <span class="spec-item">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
                 Apple Silicon only (M1/M2/M3/M4 or later)
               </span>
               <span class="spec-item">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
                 Free & Open Source
               </span>
             </div>
@@ -227,16 +252,21 @@
           <source srcset="assets/icon.webp" type="image/webp">
           <img src="assets/icon.png" alt="Isochron Icon" class="footer-logo" width="24" height="24">
         </picture>
-        <span>An open source project by <a href="https://ethnos.dev" target="_blank" rel="noopener noreferrer" style="text-decoration: underline;">ethnos.dev</a></span>
+        <span>An open source project by <a href="https://ethnos.dev" target="_blank" rel="noopener noreferrer"
+            style="text-decoration: underline;">EthnosDev</a></span>
       </div>
 
       <ul class="footer-links">
-        <li><a href="https://github.com/ethnosdev/isochron" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub Repository</a></li>
-        <li><a href="https://github.com/ethnosdev/isochron/releases" target="_blank" rel="noopener noreferrer" class="footer-link">Releases</a></li>
-        <li><a href="https://github.com/ethnosdev/isochron/blob/main/LICENSE" target="_blank" rel="noopener noreferrer" class="footer-link">License</a></li>
+        <li><a href="https://github.com/ethnosdev/isochron" target="_blank" rel="noopener noreferrer"
+            class="footer-link">GitHub Repository</a></li>
+        <li><a href="https://github.com/ethnosdev/isochron/releases" target="_blank" rel="noopener noreferrer"
+            class="footer-link">Releases</a></li>
+        <li><a href="https://github.com/ethnosdev/isochron/blob/main/LICENSE" target="_blank" rel="noopener noreferrer"
+            class="footer-link">License</a></li>
       </ul>
     </div>
   </footer>
 
 </body>
+
 </html>
