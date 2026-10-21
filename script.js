@@ -6,12 +6,13 @@
 // Global Configuration
 const CONFIG = {
   // Direct download URL for the macOS installer DMG
-  downloadUrl: "https://github.com/ethnosdev/isochron/releases/latest/download/Isochron.dmg",
+  downloadUrl: "https://github.com/ethnosdev/isochron/releases/download/v2.0.0/Isochron.dmg",
   version: "2.0.0",
 };
 
 document.addEventListener("DOMContentLoaded", () => {
   initDownloadLinks();
+  initVersionDisplay();
   initThemeToggle();
 });
 
@@ -22,6 +23,16 @@ function initDownloadLinks() {
   const downloadButtons = document.querySelectorAll(".js-download-link");
   downloadButtons.forEach((btn) => {
     btn.setAttribute("href", CONFIG.downloadUrl);
+  });
+}
+
+/**
+ * Populate version placeholders across the page
+ */
+function initVersionDisplay() {
+  const versionElements = document.querySelectorAll(".js-version");
+  versionElements.forEach((el) => {
+    el.textContent = CONFIG.version;
   });
 }
 

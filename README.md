@@ -32,11 +32,11 @@ isochron_web/
 ## ⚙️ Configuration
 
 ### 1. DMG Download Link
-In [`script.js`](script.js), `CONFIG.downloadUrl` is set to the latest release `.dmg`:
+In [`script.js`](script.js), `CONFIG.downloadUrl` is set to the release `.dmg`:
 
 ```javascript
 const CONFIG = {
-  downloadUrl: "https://github.com/ethnosdev/isochron/releases/latest/download/Isochron.dmg",
+  downloadUrl: "https://github.com/ethnosdev/isochron/releases/download/v2.0.0/Isochron.dmg",
   version: "2.0.0",
 };
 ```
