@@ -10,7 +10,11 @@ This directory contains the source code for the Isochron landing page, designed 
 isochron_web/
 ├── _headers              # Cloudflare Pages security & caching headers
 ├── assets/
-│   ├── icon.png               # App icon (1024x1024)
+│   ├── icon.webp              # Web-optimized app icon (128x128 WebP, ~3.6 KB)
+│   ├── icon.png               # High-res app icon fallback (128x128 PNG, ~21 KB)
+│   ├── icon-1024.png          # Master app icon (1024x1024)
+│   ├── apple-touch-icon.png   # iOS home screen icon (180x180)
+│   ├── og-image.png           # Social preview Open Graph image (512x512)
 │   ├── favicon.png            # 32x32 browser tab favicon
 │   ├── favicon-64.png         # 64x64 browser favicon
 │   ├── screenshot-light.webp  # High-res light mode screenshot (WebP)
@@ -32,7 +36,7 @@ In [`script.js`](script.js), `CONFIG.downloadUrl` is set to the latest release `
 
 ```javascript
 const CONFIG = {
-  downloadUrl: "https://github.com/ethnosdev/isochron/releases/download/latest/Isochron.dmg",
+  downloadUrl: "https://github.com/ethnosdev/isochron/releases/latest/download/Isochron.dmg",
   version: "2.0.0",
 };
 ```

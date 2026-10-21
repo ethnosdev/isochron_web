@@ -9,14 +9,14 @@
   <!-- Favicon -->
   <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon.png">
   <link rel="icon" type="image/png" sizes="64x64" href="assets/favicon-64.png">
-  <link rel="apple-touch-icon" href="assets/icon.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 
   <!-- Open Graph / Meta -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://isochron.ethnos.dev/">
   <meta property="og:title" content="Isochron Studio — Speech & Text Alignment for Mac">
   <meta property="og:description" content="Automatically synchronize spoken audio and transcripts in 1,100+ languages. 100% offline on Apple Silicon Macs.">
-  <meta property="og:image" content="assets/icon.png">
+  <meta property="og:image" content="https://isochron.ethnos.dev/assets/og-image.png">
 
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
@@ -27,7 +27,10 @@
   <header class="site-header">
     <div class="container nav-wrap">
       <a href="#" class="logo-group">
-        <img src="assets/icon.png" alt="Isochron Logo" class="logo-img">
+        <picture class="logo-picture">
+          <source srcset="assets/icon.webp" type="image/webp">
+          <img src="assets/icon.png" alt="Isochron Logo" class="logo-img" width="36" height="36">
+        </picture>
         <span>Isochron</span>
       </a>
 
@@ -64,7 +67,7 @@
 
         <div class="hero-cta-group">
           <div class="hero-buttons">
-            <a href="https://github.com/ethnosdev/isochron/releases/download/latest/Isochron.dmg" class="btn-primary js-download-link">
+            <a href="https://github.com/ethnosdev/isochron/releases/latest/download/Isochron.dmg" class="btn-primary js-download-link">
               <!-- Apple Logo SVG -->
               <svg width="20" height="20" viewBox="0 0 170 170" fill="currentColor">
                 <path d="M150.37 130.25c-2.45 5.66-5.35 10.87-8.71 15.66-4.58 6.53-8.33 11.05-11.22 13.56-4.48 4.12-9.28 6.23-14.42 6.35-3.69 0-8.14-1.05-13.32-3.18-5.19-2.12-9.97-3.17-14.34-3.17-4.58 0-9.49 1.05-14.74 3.17-5.26 2.13-9.5 3.24-12.74 3.35-4.35.13-9.16-1.9-14.42-6.08-3.7-3.08-7.71-7.96-12.04-14.64-5.91-9.08-10.46-19.53-13.65-31.35-3.19-11.81-4.79-22.95-4.79-33.4 0-14.63 3.65-26.68 10.96-36.14 7.31-9.46 16.53-14.33 27.67-14.62 5.03 0 10.59 1.45 16.69 4.35 6.1 2.91 10.05 4.41 11.86 4.5 2.12 0 6.3-1.63 12.53-4.9 6.24-3.26 12.05-4.72 17.44-4.36 13.04.85 23.36 5.86 30.96 15.02-11.4 6.89-17 16.52-16.79 28.9.22 9.68 3.96 17.74 11.22 24.18 7.27 6.44 15.91 10.04 25.92 10.8-2.61 8.28-5.83 16.32-9.67 24.12zM119.22 33.15c0-7.39 2.65-14.3 7.95-20.73 5.3-6.43 11.83-10.74 19.59-12.92.54 2.12.82 4.19.82 6.2 0 7.39-2.73 14.37-8.19 20.93-5.46 6.57-12.18 10.79-20.17 12.67z"/>
@@ -188,7 +191,7 @@
           </p>
 
           <div class="download-box">
-            <a href="https://github.com/ethnosdev/isochron/releases/download/latest/Isochron.dmg" class="btn-primary js-download-link">
+            <a href="https://github.com/ethnosdev/isochron/releases/latest/download/Isochron.dmg" class="btn-primary js-download-link">
               <!-- Apple Logo SVG -->
               <svg width="20" height="20" viewBox="0 0 170 170" fill="currentColor">
                 <path d="M150.37 130.25c-2.45 5.66-5.35 10.87-8.71 15.66-4.58 6.53-8.33 11.05-11.22 13.56-4.48 4.12-9.28 6.23-14.42 6.35-3.69 0-8.14-1.05-13.32-3.18-5.19-2.12-9.97-3.17-14.34-3.17-4.58 0-9.49 1.05-14.74 3.17-5.26 2.13-9.5 3.24-12.74 3.35-4.35.13-9.16-1.9-14.42-6.08-3.7-3.08-7.71-7.96-12.04-14.64-5.91-9.08-10.46-19.53-13.65-31.35-3.19-11.81-4.79-22.95-4.79-33.4 0-14.63 3.65-26.68 10.96-36.14 7.31-9.46 16.53-14.33 27.67-14.62 5.03 0 10.59 1.45 16.69 4.35 6.1 2.91 10.05 4.41 11.86 4.5 2.12 0 6.3-1.63 12.53-4.9 6.24-3.26 12.05-4.72 17.44-4.36 13.04.85 23.36 5.86 30.96 15.02-11.4 6.89-17 16.52-16.79 28.9.22 9.68 3.96 17.74 11.22 24.18 7.27 6.44 15.91 10.04 25.92 10.8-2.61 8.28-5.83 16.32-9.67 24.12zM119.22 33.15c0-7.39 2.65-14.3 7.95-20.73 5.3-6.43 11.83-10.74 19.59-12.92.54 2.12.82 4.19.82 6.2 0 7.39-2.73 14.37-8.19 20.93-5.46 6.57-12.18 10.79-20.17 12.67z"/>
@@ -220,7 +223,10 @@
   <footer class="site-footer">
     <div class="container footer-wrap">
       <div class="footer-left">
-        <img src="assets/icon.png" alt="Isochron Icon" class="footer-logo">
+        <picture class="footer-logo-picture">
+          <source srcset="assets/icon.webp" type="image/webp">
+          <img src="assets/icon.png" alt="Isochron Icon" class="footer-logo" width="24" height="24">
+        </picture>
         <span>An open source project by <a href="https://ethnos.dev" target="_blank" rel="noopener noreferrer" style="text-decoration: underline;">ethnos.dev</a></span>
       </div>
 

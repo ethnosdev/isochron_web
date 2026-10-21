@@ -6,7 +6,7 @@
 // Global Configuration
 const CONFIG = {
   // Direct download URL for the macOS installer DMG
-  downloadUrl: "https://github.com/ethnosdev/isochron/releases/download/latest/Isochron.dmg",
+  downloadUrl: "https://github.com/ethnosdev/isochron/releases/latest/download/Isochron.dmg",
   version: "2.0.0",
 };
 

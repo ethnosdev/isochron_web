@@ -179,7 +179,14 @@ a {
   letter-spacing: -0.02em;
 }
 
+.logo-picture,
+.footer-logo-picture {
+  display: inline-flex;
+  align-items: center;
+}
+
 .logo-img {
+  display: block;
   width: 36px;
   height: 36px;
   border-radius: 9px;
@@ -674,6 +681,7 @@ a {
 }
 
 .footer-logo {
+  display: block;
   width: 24px;
   height: 24px;
   border-radius: 6px;
