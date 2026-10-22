@@ -36,8 +36,8 @@ In [`index.html`](index.html), the download buttons link directly to the release
 
 ```javascript
 const CONFIG = {
-  downloadUrl: "https://github.com/ethnosdev/isochron/releases/download/v2.0.0/Isochron.dmg",
-  version: "2.0.0",
+  downloadUrl: "https://github.com/ethnosdev/isochron/releases/download/v2.0.1/Isochron.dmg",
+  version: "2.0.1",
 };
 ```
 
